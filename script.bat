@@ -10,4 +10,5 @@ netsh interface ipv4 set dns "Local Area Connection" static 208.67.222.123 prima
 netsh interface ipv4 add dns "Local Area Connection" 208.67.220.123 index=2
 netsh interface ipv4 set dns "Local Area Connection 2" static 208.67.222.123 primary
 netsh interface ipv4 add dns "Local Area Connection 2" 208.67.220.123 index=2
+ipconfig /flushdns
 echo [+] DNS servers changed to OpenDNS Family Shield.
